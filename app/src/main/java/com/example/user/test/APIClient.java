@@ -8,7 +8,7 @@ public class APIClient {
     public static Retrofit getClient() {
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://ip-api.com/")
+                    .baseUrl("http://test.code-apex.com/codeapex_project/index.php/api/user/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
